@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gantt 전용 스타일 */
+.gantt-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.gantt-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.gantt-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.gantt-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Task bar 드래그 시 텍스트 선택 방지 */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
